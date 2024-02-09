@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+:root{
+    --black: #000;
+    --white: #fff;
+    --darkGray1: #111;
+    --darkGray2: #222;
+    --darkGray3: #333;
+    --darkGray4: #444;
+    --lightGray1: #eee;
+    --lightGray2: #ddd;
+    --lightGray3: #ccc;
+    --red: #f00;
+    --blue: #00f;
+    --green: #0f0;
+}
+
+body{
+    position: relative;
+    font-family: 'roboto', sans-serif;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+nav{
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0px;
+}
+nav div {
+    display: flex;
+    justify-content: center;
+    margin: 0px 10px;
+}
+
+nav div img {
+    width: 40px;
+}
+
+nav div p {
+    margin: auto;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.filter {
+    height: 50px;
+    border: 1px solid red;
+}
+
+.video-container {
+    /* border: 1px solid var(--white); */
+    margin-top: 5px;
+
+    
+}
+
+.video {
+    /* width: 98%;
+    max-width: 98%; */
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 5px;
+    /* border: 1px solid var(--white); */
+    border-radius: 10px;
+    background-color: var(--darkGray2);
+    /* padding: 10px 0px; */
+}
+
+.thumbnail{
+    width: 99%;
+    height: auto;
+    max-width: 500px;
+    height: 250px;
+    max-height: 300px; 
+    /* change this */
+    object-fit: cover; 
+    /* border: 1px solid red; */
+    margin: auto;
+    /* border-bottom: 1px solid white; */
+    border-radius: 10px;
+
+}
+
+.content{
+    width: 97%;
+    max-width: 500px;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: start;
+    margin: auto;
+    padding: 10px 0px;
+}
+
+.channel-icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin: auto 10px;
+}
+
+.info{
+    text-align: start;
+    margin-left: 5px;
+}
+
+.title{
+    font-size: 17px;
+}
+
+.channel-name{
+    font-size: 16px;
+}
